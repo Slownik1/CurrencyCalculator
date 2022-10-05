@@ -10,7 +10,7 @@ public class CurrencyService {
 
     private RestTemplate restTemplate = new RestTemplate();
 
-    public CurrencyModel getCurencyValue(){
+    public CurrencyService getCurencyValue(){
 
         String response = restTemplate.getForObject("http://api.nbp.pl/api/exchangerates/rates/A/CHF/", String.class);
         log.info(response);

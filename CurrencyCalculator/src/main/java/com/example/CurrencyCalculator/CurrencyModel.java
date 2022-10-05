@@ -6,19 +6,13 @@ public class CurrencyModel {
         return rate;
     }
 
-    public void setRate(double rate) {
-        this.rate = rate;
-    }
-
     public String getCurrency() {
         return currency;
     }
 
-    public void setCurrency(String currency) {
-        this.currency = currency;
-    }
-
     private double rate;
+    private String code;
+    private String table;
     private String currency;
 
 }

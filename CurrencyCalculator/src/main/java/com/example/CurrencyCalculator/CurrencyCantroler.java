@@ -13,7 +13,7 @@ public class CurrencyCantroler {
     }
 
     @GetMapping("/")
-    public CurrencyModel getCurrencyValue(){
+    public CurrencyService getCurrencyValue(){
         return currencyService.getCurencyValue();
     }
 
